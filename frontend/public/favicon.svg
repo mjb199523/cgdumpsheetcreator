@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="8" fill="url(#paint0_linear)"/>
+  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" fill="white" style="font-family: 'Inter', sans-serif; font-weight: 800; font-size: 20px;">D</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#863BFF"/>
+      <stop offset="1" stop-color="#5C16D0"/>
+    </linearGradient>
+  </defs>
+</svg>

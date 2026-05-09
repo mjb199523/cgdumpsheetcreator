@@ -1,0 +1,138 @@
+[
+  {
+    "sheet": "Topic Master",
+    "column": "topic_id",
+    "rule": "not_null",
+    "severity": "critical",
+    "message": "Topic ID is required"
+  },
+  {
+    "sheet": "Topic Master",
+    "column": "topic_id",
+    "rule": "unique",
+    "severity": "critical",
+    "message": "Topic ID must be unique"
+  },
+  {
+    "sheet": "Topic Master",
+    "column": "topic_id",
+    "rule": "no_spaces",
+    "severity": "critical",
+    "message": "Topic ID must not contain spaces"
+  },
+  {
+    "sheet": "Assessment Master",
+    "column": "assessment_id",
+    "rule": "not_null",
+    "severity": "critical",
+    "message": "Assessment ID is required"
+  },
+  {
+    "sheet": "Assessment Master",
+    "column": "assessment_id",
+    "rule": "unique",
+    "severity": "critical",
+    "message": "Assessment ID must be unique"
+  },
+  {
+    "sheet": "Assessment Master",
+    "column": "assessment_id",
+    "rule": "no_spaces",
+    "severity": "critical",
+    "message": "Assessment ID must not contain spaces"
+  },
+  {
+    "sheet": "Assessment Master",
+    "column": "launch_date",
+    "rule": "not_null",
+    "severity": "critical",
+    "message": "Launch Date is required"
+  },
+  {
+    "sheet": "Assessment Master",
+    "column": "close_date",
+    "rule": "not_null",
+    "severity": "critical",
+    "message": "Close Date is required"
+  },
+  {
+    "sheet": "Assessment Master",
+    "column": "close_date",
+    "rule": "greater_than",
+    "params": { "compare_column": "launch_date" },
+    "severity": "critical",
+    "message": "Close Date must be after Launch Date"
+  },
+  {
+    "sheet": "Generic Question Master Table",
+    "column": "question_id",
+    "rule": "not_null",
+    "severity": "critical",
+    "message": "Question ID is required"
+  },
+  {
+    "sheet": "Generic Question Master Table",
+    "column": "question_id",
+    "rule": "unique",
+    "severity": "critical",
+    "message": "Question ID must be unique"
+  },
+  {
+    "sheet": "Generic Question Master Table",
+    "column": "question_id",
+    "rule": "no_spaces",
+    "severity": "critical",
+    "message": "Question ID must not contain spaces"
+  },
+  {
+    "sheet": "Generic Question Master Table",
+    "column": "correct_answer",
+    "rule": "not_null",
+    "severity": "critical",
+    "message": "Correct Answer is required"
+  },
+  {
+    "sheet": "Generic Question Master Table",
+    "column": "learning_outcome",
+    "rule": "not_null",
+    "severity": "critical",
+    "message": "Learning Outcome is required"
+  },
+  {
+    "sheet": "Generic Question Master Table",
+    "column": "domain",
+    "rule": "not_null",
+    "severity": "critical",
+    "message": "Domain is required"
+  },
+  {
+    "sheet": "Generic Question Master Table",
+    "column": "cognitive_level",
+    "rule": "allowed_values",
+    "params": { "values": ["Knowledge", "Understanding", "Application", "Analysis", "Synthesis", "Evaluation"] },
+    "severity": "critical",
+    "message": "Cognitive Level must be a valid Bloom's taxonomy level"
+  },
+  {
+    "sheet": "Generic Question Master Table",
+    "column": "question_description",
+    "rule": "not_null",
+    "severity": "critical",
+    "message": "Question Description is required"
+  },
+  {
+    "sheet": "Generic Question Master Table",
+    "column": "medium",
+    "rule": "not_null",
+    "severity": "critical",
+    "message": "Medium is required"
+  },
+  {
+    "sheet": "Generic Question Master Table",
+    "column": "assessment_id",
+    "rule": "cross_sheet_consistency",
+    "params": { "reference_sheet": "Assessment Master", "reference_column": "assessment_id" },
+    "severity": "critical",
+    "message": "Assessment ID must exist in Assessment Master"
+  }
+]

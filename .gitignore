@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Node
+node_modules/
+dist/
+.env.local
+
+# Project specific
+backend/uploads/
+backend/output/
+backend/app/static/media/
+backend/debug_cell*.py
+backend/debug_cell*.txt
+backend/debug_doc.txt
+*.xlsx
+*.pdf
+*.docx
